@@ -47,7 +47,9 @@
 }
 
 .perfil__infos .perfil__description {
+  text-align: center;
   color: var(--white_alt);
+  max-width: 88%;
   font-weight: 400;
   font-size: 20px;
   margin-top: 12px;
@@ -86,12 +88,12 @@
   .perfil__infos .perfil__name {
     margin-top: 8px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 21px;
   }
   
   .perfil__infos .perfil__description {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     margin: 18px 5px 5px 18px;
   }
   
