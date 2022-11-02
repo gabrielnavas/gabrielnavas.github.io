@@ -1,0 +1,232 @@
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue_dark);
+  border-right: 1.5px dashed var(--red);
+  width: 45%;
+  height: 100%;
+}
+
+.left__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+}
+
+.perfil__photo img {
+  width: 310px;
+  border-radius: 175px;
+  padding: 5px;
+  border: 3px solid var(--red);
+  cursor: pointer;
+}
+
+.perfil__photo :hover{
+  transform: scale(1.1);
+  transform-origin: center;
+  transition-duration: 800ms;
+  transform-style: flat;
+}
+
+.perfil__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px
+}
+
+.perfil__infos .perfil__name {
+  margin-top: 22px;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.perfil__infos .perfil__description {
+  text-align: center;
+  color: var(--white_alt);
+  max-width: 88%;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.perfil__infos .perfil__email {
+  color: var(--white_alt);
+  font-weight: 500;
+  font-style: inherit;
+  font-size: 22px;
+  margin-top: 6px;
+}
+
+@media (min-width:270px) { 
+  /* smartphones, portrait very small */ 
+  .left {
+    width: 100%;
+    height: 100%;
+    border-right: none;
+  }
+
+  .perfil__photo img {
+    width: 130px;
+    border-radius: 65px;
+    padding: 1px;
+    border: 2px solid var(--red);
+  }
+  
+  .perfil__infos {
+    margin-top: 2px
+  }
+  
+  .perfil__infos .perfil__name {
+    margin-top: 8px;
+    font-size: 21px;
+  }
+  
+  .perfil__infos .perfil__description {
+    font-size: 16px;
+    margin: 18px 5px 5px 18px;
+  }
+  
+  .perfil__infos .perfil__email {
+    font-size: 13px;
+  }
+}
+
+@media (min-width:320px) { 
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  .left {
+    width: 100%;
+    height: 100%;
+    border-right: none;
+  }
+
+  .perfil__photo img {
+    width: 130px;
+    border-radius: 65px;
+    padding: 1px;
+    border: 2px solid var(--red);
+  }
+  
+  .perfil__infos {
+    margin-top: 2px
+  }
+  
+  .perfil__infos .perfil__name {
+    margin-top: 8px;
+    font-size: 21px;
+  }
+  
+  .perfil__infos .perfil__description {
+    font-size: 16px;
+    margin: 18px 5px 5px 18px;
+  }
+  
+  .perfil__infos .perfil__email {
+    font-size: 13px;
+  }
+}
+
+@media (min-width:480px) { 
+  /* smartphones, Android phones, landscape iPhone */ 
+  .left {
+    width: 100%;
+    height: 100%;
+    border-right: none;
+  }
+
+  .perfil__photo img {
+    width: 130px;
+    border-radius: 65px;
+    padding: 1px;
+    border: 2px solid var(--red);
+  }
+  
+  .perfil__infos {
+    margin-top: 2px
+  }
+  
+  .perfil__infos .perfil__name {
+    margin-top: 8px;
+    font-size: 21px;
+  }
+  
+  .perfil__infos .perfil__description {
+    font-size: 16px;
+    margin: 18px 5px 5px 18px;
+  }
+  
+  .perfil__infos .perfil__email {
+    font-size: 13px;
+  }
+}
+
+@media (min-width:600px) { 
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+  .left {
+    width: 100%;
+    height: 100%;
+    border-right: none;
+  }
+
+  .perfil__photo img {
+    width: 130px;
+    border-radius: 65px;
+    padding: 1px;
+    border: 2px solid var(--red);
+  }
+  
+  .perfil__infos {
+    margin-top: 2px
+  }
+  
+  .perfil__infos .perfil__name {
+    margin-top: 8px;
+    font-size: 21px;
+  }
+  
+  .perfil__infos .perfil__description {
+    font-size: 16px;
+    margin: 18px 5px 5px 18px;
+  }
+  
+  .perfil__infos .perfil__email {
+    font-size: 13px;
+  }
+}
+
+@media (min-width:801px) { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .left {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  
+  .perfil__photo img {
+    width: 200px;
+    border-radius: 100px;
+    padding: 1px;
+    border: 2px solid var(--red);
+  }
+  
+  .perfil__infos .perfil__name {
+    margin-top: 8px;
+    font-size: 35px;
+  }
+  
+  .perfil__infos .perfil__description {
+    font-size: 25px;
+    margin: 18px 5px 5px 18px;
+  }
+}
+
+@media (min-width:1025px) { 
+}
+
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+}
