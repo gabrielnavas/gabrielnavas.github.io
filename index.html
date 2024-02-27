@@ -5,9 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gabriel Navas Profile</title>
-  <link rel="stylesheet" href="./assets/css/global.css">
-  <link rel="stylesheet" href="./assets/css/left.css">
-  <link rel="stylesheet" href="./assets/css/right.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/left.css">
+  <link rel="stylesheet" href="./css/right.css">
+  <link rel="stylesheet" href="./css/social-links.css">
+  <link rel="stylesheet" href="./css/recents-projects.css">
+
+  <script src="js/recents-projects.js"></script>
+  <script src="js/social-links.js"></script>
 </head>
 <body>
   <div class='wrapper'>
@@ -27,60 +32,49 @@
   
     </div>
     <div class='right'>
+
       <span class='title'>Join me!</span>
       <div class='right__container'>
-        <div class='social_link'>
-          <a target="_blank" href="https://github.com/gabrielnavas">
-            <img src='assets/imgs/github.png' >
-          </a>
-        </div>
-        <div class='social_link'>
-          <a target="_blank" href="https://www.linkedin.com/in/gabrnavas">
-            <img src='assets/imgs/linkeding.png' >
-          </a>
-        </div>
-        <div class='social_link'>
-          <a target="_blank" href="https://twitter.com/gabrnavas">
-            <img src='assets/imgs/x.png' >
-          </a>
-        </div>
-
-        <div class='social_link'>
-          <a target="_blank" href="https://www.codewars.com/users/gabrielnavas">
-            <img src='assets/imgs/codewars.svg' >
-          </a>
-        </div>
-        
-        <div class='social_link'>
-          <a target="_blank" href="https://www.instagram.com/gabrnavas/">
-            <img src='assets/imgs/instagram.png' >
-          </a>
-        </div>
-        <!-- <div class='social_link'>
-          <a target="_blank" href="https://www.hackerrank.com/gabrielnavas">
-            <img src="assets/imgs/hacker_rank.png" alt="" srcset="">
-          </a>
-        </div> -->
-    
-        <!-- <div class='social_link'>
-          <a target="_blank" href="https://www.urionlinejudge.com.br/judge/pt/profile/167302">
-            <img src='https://3.bp.blogspot.com/-YNs00L9J-8U/WK5HOc0eLjI/AAAAAAAAAC0/H3fsvz_tpaA0QRMNuxT5DLtOije3Qs8DACLcB/s1600/uri.png' >
-          </a>
-        </div> -->
-    
-        <!-- <div class='social_link'>
-          <a target="_blank" href="https://exercism.io/profiles/gabrielnavas">
-            <img src='https://masonliu.gallerycdn.vsassets.io/extensions/masonliu/exercism/1.17.0/1586192511972/Microsoft.VisualStudio.Services.Icons.Default' >
-          </a>
-        </div> -->
       </div>
+
+      <span class='title'>Recents Projects</span>
+      <ul class="recents-projects-list">
+      </ul>
+      
     </div>
   </div>
 
-  <!-- <script>
-    if (window.location.href==="https://gabrielnavas.github.io/") {
-        window.location.href = "https://www.google.com.br"; 
-    }
-  </script> -->
+  <script>
+    createProjectListItem(
+      "Asks/Questions App", 
+      "https://github.com/gabrielnavas/simple-ask-flutter",
+      "A simple asks Flutter project.",
+      ["Dart", "Flutter"]
+    )
+    createProjectListItem(
+      "Meals Flutter App", 
+      "https://github.com/gabrielnavas/meals-flutter-app",
+      "A small Meals App project written in Flutter. Without state manager. Using dummy data.",
+      ["Dart", "Flutter", "Intl"]
+    )
+    createProjectListItem(
+      "Expense Flutter App", 
+      "https://github.com/gabrielnavas/expenses-flutter-app",
+      " A small Expenses/Finances project written in Flutter. Without state manager. Using dummy data.",
+      ["Dart", "Flutter", "Intl"]
+    )
+    createProjectListItem(
+      "Shop Flutter App", 
+      "https://github.com/gabrielnavas/expenses-flutter-app",
+      "A examples of the Shop or Ecommerce written in Flutter. Using Provider Context.",
+      ["Dart", "Flutter", "Provider", "Intl"]
+    )
+
+    createSocialLink("https://github.com/gabrielnavas", "assets/imgs/github.png")
+    createSocialLink("https://www.linkedin.com/in/gabrnavas", "assets/imgs/linkeding.png")
+    createSocialLink("https://twitter.com/gabrnavas", "assets/imgs/x.png")
+    createSocialLink("https://www.codewars.com/users/gabrielnavas", "assets/imgs/codewars.svg")
+    createSocialLink("https://www.instagram.com/gabrnavas", "assets/imgs/instagram.png")
+  </script>
 </body>
 </html>

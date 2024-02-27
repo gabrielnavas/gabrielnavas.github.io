@@ -1,0 +1,36 @@
+.social_link {
+  display: block;
+  margin: 15px;
+  padding: 5px;
+  border-radius:25px;
+  border: 2px dashed var(--white_alt);
+}
+
+.social_link:hover {
+  transform: scale(1.4);
+  transform-origin: center;
+  transition-duration: 600ms;
+  transform-style: flat;
+}
+
+.social_link a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30px;
+}
+
+
+@media (min-width:270px) { 
+  .social_link a img {
+    width: 66px;
+    height: 66px;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width:801px) { 
+  .social_link a img {
+    width: 100px;
+    height: 100px;
+  }
+}

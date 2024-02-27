@@ -1,0 +1,119 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.recents-projects-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recents-projects-list-item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.recents-projects-list-item:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.recents-projects-list-item:hover::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.recents-projects-list-item:hover::before {
+  opacity: 1;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.tech-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-item {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+/* Media Query para Tablets */
+@media screen and (max-width: 768px) {
+  .recents-projects-list-item {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+/* Media Query para Dispositivos Móveis */
+@media screen and (max-width: 480px) {
+  .recents-projects-list-item {
+    margin: 5px;
+    padding: 10px;
+  }
+  .recents-projects-list-item:hover::before {
+    top: -30px;
+  }
+}
+
+.red {
+  background-color: #B33939;
+}
+
+.green {
+  background-color: #388E3C;
+}
+
+.blue {
+  background-color: #1E88E5;
+}
+
+.yellow {
+  background-color: #FFC107;
+}
+
+.cyan {
+  background-color: #0097A7;
+}
+
+.magenta {
+  background-color: #D81B60;
+}
