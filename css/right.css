@@ -60,14 +60,14 @@
   }
 
   .right__container {
-    width: 45%;
+    width: 60%;
   }
 }
 
 @media (min-width:600px) { 
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
   .right__container {
-    width: 55%;
+    width: 66%;
   }
 }
 
