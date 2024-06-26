@@ -27,6 +27,7 @@ body {
 .wrapper {
   display: flex;
   width: 100%;
+  padding-bottom: 1.2rem;
   background: linear-gradient(
     124deg, var(--blue_dark) 0%, 
     var(--blue_dark_alt) 23%, 
