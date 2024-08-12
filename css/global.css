@@ -6,7 +6,7 @@
 
 :root {
   --blue_dark: #000814;
-  --blue_dark_alt: #001d3d;
+  --blue_dark_alt: #003064;
   --blue: #003566;
   --red: #e63946;
   --white: #f1faee;
@@ -29,9 +29,9 @@ body {
   width: 100%;
   padding-bottom: 1.2rem;
   background: linear-gradient(
-    124deg, var(--blue_dark) 0%, 
-    var(--blue_dark_alt) 23%, 
-    var(--blue) 100%
+    248deg, var(--blue_dark) 0%, 
+    var(--blue_dark_alt) 45%, 
+    var(--blue) 96%
   );
 }
 
