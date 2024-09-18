@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,22 +16,24 @@
   <script src="js/social-links.js"></script>
 
 </head>
+
 <body>
   <div class='wrapper'>
     <div class='left'>
       <div class='left__container'>
         <div class='perfil__photo'>
           <a target="_blank" href="https://github.com/gabrielnavas">
-            <img src='https://avatars.githubusercontent.com/u/24739714?s=460&u=d258d5d7f94a9d952fb984a82ef8b9cc8e370680&v=4'> 
+            <img
+              src='https://avatars.githubusercontent.com/u/24739714?s=460&u=d258d5d7f94a9d952fb984a82ef8b9cc8e370680&v=4'>
           </a>
         </div>
-    
+
         <div class='perfil__infos'>
           <span class='perfil__name'>Gabriel Navas</span>
           <span class='perfil__description'>Hello, dear. I'm Gabriel, and I love programming so much. </span>
         </div>
       </div>
-  
+
     </div>
     <div class='right'>
 
@@ -41,67 +44,73 @@
       <span class='title'>Recent Projects</span>
       <ul class="recents-projects-list">
       </ul>
-      
+
     </div>
   </div>
 
   <script>
-      createProjectListItem(
-      "Url Shortener", 
+    createProjectListItem(
+      "Products Manager",
+      "https://github.com/gabrielnavas/fullstack-projects/tree/main/crud-product-next-gin-postgresql",
+      "Manage a product table with pagination.",
+      ["NextJS", "Tailwind", "shadcn/ui", "Docker", "SQL", "Docker-compose", "Typescript", "PostgreSQL"]
+    );
+    createProjectListItem(
+      "Url Shortener",
       "https://github.com/gabrielnavas/url-shortener-spring-boot-angular",
       "This project allows users to shorten long URLs and access user-friendly shortened links.",
       ["Spring Boot", "JPA", "Docker", "Lombok", "OpenAPI 3", "Java", "MaterialUI", "Angular", "Typescript", "PostgreSQL"]
     );
-     createProjectListItem(
-      "Book network", 
+    createProjectListItem(
+      "Book network",
       "https://github.com/gabrielnavas/book-network",
       "A comprehensive FullStack book network featuring book borrowing and returning, user feedback, registration, login, and email token validation.",
       ["Spring Boot", "JPA", "Docker", "Lombok", "JWT", "OpenAPI 3", "Java", "Bootstrap", "Angular", "Fontawesome", "Typescript", "PostgreSQL"]
     );
     createProjectListItem(
-      "A simple todo app with Flutter", 
+      "A simple todo app with Flutter",
       "https://github.com/gabrielnavas/todo_flutter_app",
       "Todo List App",
       ["Dart", "Flutter", "provider"]
     );
     createProjectListItem(
-      "Password Generator App", 
+      "Password Generator App",
       "https://github.com/gabrielnavas/password_generator_flutter_app",
       "A Password generator inspired by lastpass generator.",
       ["Dart", "Flutter"]
     );
     createProjectListItem(
-      "Great Places App",  
+      "Great Places App",
       "https://github.com/gabrielnavas/flutter_app_great_places",
       "Take a photos and get real location, using Google Maps API.",
-      ["Dart", "Flutter", "Provider", "image_picker", "path_provider", 
-      "path", "sqflite", "Location", "Google_maps_flutter", "Http"]
+      ["Dart", "Flutter", "Provider", "image_picker", "path_provider",
+        "path", "sqflite", "Location", "Google_maps_flutter", "Http"]
     );
     createProjectListItem(
-      "Shop Flutter App without Authentication", 
+      "Shop Flutter App without Authentication",
       "https://github.com/gabrielnavas/shop_flutter_app",
       "A examples of the Shop written in Flutter. Using Provider Context and Firebase.",
       ["Dart", "Flutter", "Provider", "Intl", "Faker", "Uuid", "Http", "Firebase API"]
     );
     createProjectListItem(
-      "Expense App", 
+      "Expense App",
       "https://github.com/gabrielnavas/expenses-flutter-app",
       " A small Expenses/Finances project written in Flutter. Without state manager. Using dummy data.",
       ["Dart", "Flutter", "Intl"]
     );
     createProjectListItem(
-      "Meals App", 
+      "Meals App",
       "https://github.com/gabrielnavas/meals-flutter-app",
       "A small Meals App project written in Flutter. Without state manager. Using dummy data.",
       ["Dart", "Flutter", "Intl"]
     );
     createProjectListItem(
-      "Asks/Questions App", 
+      "Asks/Questions App",
       "https://github.com/gabrielnavas/simple-ask-flutter",
       "A simple asks Flutter project.",
       ["Dart", "Flutter"]
     );
-  
+
     createSocialLink("mailto:gabrielnavas@protonmail.com", "assets/imgs/email.png")
     createSocialLink("https://linkedin.com/in/gabrnavas", "assets/imgs/linkeding.png")
     createSocialLink("https://github.com/gabrielnavas", "assets/imgs/github.png")
@@ -112,4 +121,5 @@
     createSocialLink("https://twitch.tv/ogabrielnavas", "assets/imgs/twitch.png")
   </script>
 </body>
+
 </html>
